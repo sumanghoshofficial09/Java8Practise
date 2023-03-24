@@ -1,0 +1,112 @@
+Java is most popular and widely accepted language in the world 
+
+it is already most popular language why the java creators decided to change 
+
+Java creator wants to introduce the Functional Feature like lambda , stream 
+like Optional etc
+
+
+
+Technological advancement :
+
+nowadays even mobile device has multipe processors
+we need to use multi threading to use all the processor effectively 
+
+we all know that working with thread is so touchy we need to careful while working 
+with thread
+
+
+with Java8 we can write functional programming code with new functional programming concept 
+
+
+which is going to help us in simplyfying the concurrency operation 
+
+which will make use of multiple processor whenver you use concurrency operation 
+
+it supports creating immutable object which is going to solve a lots of problem in 
+java application :
+
+Mutable objects are source of many errors in java applications 
+
+functional programming highly discourages mutating an object 
+
+functional programming going to let you write more concise and readable code 
+
+in java8 it is going to allow you use function or methods as first class citizens 
+
+
+in functional programming , you are going to create a function , you can assign the functionality 
+
+to a variable and pass it to as parameter to other method 
+
+
+Function<String,String> addSomeString = (name) -> name.toUpperCase().concat("default")
+
+the first param represent an input and second param in generic represent an output 
+
+we have a new syntax here -> , this syntax is called lambda expression 
+
+above line we are expecting an input string then we are performing Uppercase operation there 
+
+and then we are performing concat operation there 
+
+
+and this whole logic is assigned to a variable called addSomeString 
+
+we can pass this addSomeString as anyother variable like java 
+
+in java 8 we can write the code as Declarative way 
+
+rather than an imperative way 
+
+what is the difference between imperative way and declarative way 
+-------------------------------------------------
+
+lets talk about imperative style of programming 
+
+this style of programming focused how to get the result that you want 
+
+this style of programming enbraces an object state to acheive some goal 
+
+so this style of programming supports Object mutability 
+
+to achieve an goal , you define the list of steps 
+
+you write the code what needs to be done in each step 
+
+class object oriented programming style 
+
+
+
+--------------------------------
+
+
+Now lets talk about Declarative programming 
+
+this style of programmming focuses on what is the result you want , 
+dont want worry about the how to get the result 
+
+this style of programming embraces object immutability 
+
+
+this style of programming is analogous to SQL 
+
+in sql we only care about the to get the data from table 
+
+but we dont care about the algorithm used to fetch data from db table 
+
+
+use the function that is already part of the library to achive the objective 
+
+--------------------------------
+
+in java8 they a lots of function got introduced 
+
+to make you of those function in order to get the result you want 
+
+no need to worry about hwo the data get processed behind the scene 
+
+Functional programming uses the concept of declarative programming 
+
+
+
