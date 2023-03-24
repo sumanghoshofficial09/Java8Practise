@@ -1,0 +1,57 @@
+Lambda is equivalent to a function (method ) without a name 
+
+lambda is also referred to as Anonymous function 
+
+it has all the qualities like the regular method has such that method parameters 
+method body and return type 
+
+A lambda in java is similar to a method as mentioned earlier also it is not tied to any class
+
+Lambda expression can also assinged to a variable and pass like variable 
+
+lambda expression : 
+
+()  this is for input parameters 
+
+->  followed by that we have an arrow which is doing the task of separation between lambda input and lambda body 
+
+{}  lambda body is provide with in curly braces 
+
+the body is the one which is going to hold the actual content 
+
+-------------------
+Usages of Lambda 
+---------------------
+
+Lambda 's main purpose is to implement the functional interface 
+
+
+functional interfaces in other word called the SAM 
+
+Single Abstract method Interfaces 
+--------------------------------------
+
+
+@FunctionalInterfaces
+public interface Comparator<T>
+{
+
+	int compare(T o1, T o2);
+}
+
+@FunctionalInterface 
+
+public interface Runnable {
+
+
+	public abstract void run();
+
+
+}
+
+
+---------------------------------------------
+above th
+
+
+
