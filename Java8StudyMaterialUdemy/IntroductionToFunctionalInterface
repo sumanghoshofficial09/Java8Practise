@@ -1,0 +1,57 @@
+
+functional interface is presnt in java since jdk 1.0
+
+those were referred as Single Abstract Method Interfaces 
+
+Concept are same but they are categorized into
+
+as per java documentation , the definition is that 
+
+
+Functional interface is an interface which has only one abstract method 
+
+
+We have seen this annotation @FunctionalInterface which got introduced in java8
+
+
+and all the interfaces which has one abstract method , are annotated with functional Interfaces 
+
+,this is oprtional annotation , but it is helping interface in validating the contract that interface must have only one abstract method 
+
+
+New Functional Interface got introduced in java 8 
+
+
+the four primary interfaces are 
+---------------------------------
+
+Consumer 
+
+Predicate 
+
+Function 
+
+Supplier 
+
+each and every functional interfaces have their own extension 
+
+
+for Consumer , we have BiConsumer 
+
+
+for predicate we have BiPredicate 
+
+Function : BiFunction , UnaryOperator , BinaryOperator 
+
+you might be wondering I dont use any of the interfaces in my curreeny project still my application is working like a charm
+
+why do we have to learn these interfaces : 
+
+
+we are going to learn all those enhancement made to the collections 
+
+such that list , map set that uses these interfaces which is going to make your develpement realy realy faster 
+
+
+
+ 
