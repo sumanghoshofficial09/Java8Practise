@@ -1,0 +1,8 @@
+Each functional interface has it own extension 
+Consumer has BiConsumer interface :
+
+in BiConsumer accept method take two input parameters
+
+BiConsumer  accepts two inputs and then perform some operation on 
+inputs
+
