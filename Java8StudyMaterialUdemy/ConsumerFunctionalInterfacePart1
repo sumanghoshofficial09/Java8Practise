@@ -1,0 +1,27 @@
+All the new functional interfaces available in java.util.function package 
+
+We are going to explore Consumer interface 
+
+
+it is @FunctionalInterface annotation which means it is functional interface
+
+it have only one abstract  method called 
+
+ void  accept(T t)
+ 
+ and there are another default method 
+ 
+ we will explore this later 
+ 
+ 
+ lets see what are other interface part of java.util.function package 
+ 
+ accept  method accept an input , it did not return any output from it 
+ 
+ 
+ in java.util.function all the interfaces are added as new interfaces 
+ 
+ 
+ use of Consumer is such that accept an input and perform some operation on input 
+ 
+ 
