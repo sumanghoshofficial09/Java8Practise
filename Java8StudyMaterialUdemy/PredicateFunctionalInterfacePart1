@@ -1,0 +1,54 @@
+Lets learn about Predicate Functional interface 
+
+it has abstract method called test 
+
+--------------------
+boolean test(T t)
+---------------------
+
+this is the abstract method, which we are going to implement as part of lambda implementation
+
+this method accept one input , then it is going to perform one operation in the input and then return boolean
+
+it also support some of the  default method 
+
+and method 
+
+default Predicate<T> and(Predicate<? super T> other)
+{
+	Objects.requiredNotNull(other);
+	
+	return (t) -> test(t) && other.test(t);
+
+}
+
+-------------------------
+
+negate operation : 
+
+----------------------------
+
+default Predicate<T> negate()
+{
+
+	return (t) -> !test(t);
+	
+}
+
+-----------------------------
+
+like this default method or 
+
+default Predicate<T> or(Predicate<? super T> other)
+{
+
+	return (t) -> test(t) || other.test(t);
+}
+
+-----------------------------------------------
+
+there is also isEquals method 
+
+
+
+let code some simple usecase and explore all the method of Predicate 
