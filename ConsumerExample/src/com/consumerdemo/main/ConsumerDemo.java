@@ -7,6 +7,9 @@ import com.consumerdemo.data.StudentDatabase;
 
 public class ConsumerDemo {
 	
+	static Consumer<Student> printNameCosnumer = student -> System.out.println(student.getName());
+	static Consumer<Student> printGenderCosnumer = student -> System.out.println(student.getGender());
+	
 	
 	public static void printName()
 	{
@@ -29,6 +32,55 @@ public class ConsumerDemo {
 		studentList.forEach(consumer2);
 	}
 	
+	
+	/*
+	 * 
+	 * lets explore consumer by adding some more usecases 
+	 * 
+	 */
+	
+	public static void printNamesAndGender()
+	{
+		
+		List<Student> studentList=StudentDatabase.getAllStudents();
+		
+		
+		studentList.forEach(printNameCosnumer.andThen(printGenderCosnumer));
+		
+		/*
+		 * 
+		 * the using of method andThen is called Consumer chaining 
+		 */
+		
+	}
+	
+	/**
+	 * 
+	 * @param args
+	 * 
+	 * we are going to use some condition with Consumer Interface 
+	 * 
+	 */
+	
+	public static void printNameAndGenderUsingConditon()
+	{
+		List<Student> studentList = StudentDatabase.getAllStudents();
+		
+		studentList.forEach(s -> {
+			
+			if(s.getGpa() == 2)
+			{
+				printNameCosnumer.andThen(printGenderCosnumer).accept(s);
+			}
+			
+			/*
+			 * 
+			 * by using andThen we can chain n number of Consumer interfaces 
+			 * implementation 
+			 * 
+			 */
+		});
+	}
 	public static void main(String args[])
 	{
 		
@@ -55,6 +107,12 @@ public class ConsumerDemo {
 		 */
 		
 		printName();
+		
+		printNamesAndGender();
+		
+		System.out.println("============================");
+		
+		printNameAndGenderUsingConditon();
 	}
 
 }
